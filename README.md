@@ -10,6 +10,9 @@ This repository provides resources for **detecting and classifying response clar
 - An annotated **dataset of question-answer pairs** from political interviews.
 - Baseline models and experiments establishing new benchmarks for this task.
 
+
+The paper is available on [arXiv](https://arxiv.org/abs/2409.13879).
+
 The dataset is available on [Hugging Face](https://huggingface.co/datasets/ailsntua/QEvasion). The full code and trained models will be released soon.
 
 
