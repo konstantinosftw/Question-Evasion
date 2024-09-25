@@ -1,6 +1,8 @@
 # "I Never Said That": A dataset, taxonomy and baselines on response clarity classification.
 
 [![Paper Status](https://img.shields.io/badge/EMNLP%202024-Accepted-brightgreen)](https://example.com/link-to-paper)
+[![arXiv](https://img.shields.io/badge/arXiv-<arXivID>-b31b1b)]([https://arxiv.org/abs/<arXivID>](https://arxiv.org/abs/2409.13879))
+
 
 This repository provides resources for **detecting and classifying response clarity in political interviews**, introducing:
 
