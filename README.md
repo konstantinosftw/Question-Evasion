@@ -41,6 +41,7 @@ The dataset folder includes the following files:
 #### 1.1 Statistics of the Dataset
 To obtain statistics of the dataset, run the following command:
 ```
+>>> cd scripts
 >>> python datasetAnalysis.py
 ```
 
@@ -62,7 +63,7 @@ For the Falcon-40b model (similarly with any other hugging face model):
 #### 2.2 Zero-Shot Inference on GPT3.5_turbo
 For direct clarity problem:
 ```
->>> python chatgpt_zero_shot_.py --token ... --output_file "falcon_40b_zero_shot_clarity.pickle" 
+>>> python scripts/chatgpt_zero_shot_.py --token ... --output_file "falcon_40b_zero_shot_clarity.pickle" 
 ```
 For evasion based clarity problem:
 ```

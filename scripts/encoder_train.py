@@ -108,7 +108,7 @@ class CustomDataset(Dataset):
 
 # Example data
 
-dataset = pd.read_csv("dataset/QAEvasion.csv")
+dataset = pd.read_csv("../dataset/QAEvasion.csv")
 
 
 all_texts = [f"Question: {row['interview_question']}\n\nAnswer: {row['interview_answer']}\n\nSubanswer: {row['question']}" for row in dataset["train"] if "other" not in row["label"].lower()]

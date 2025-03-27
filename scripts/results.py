@@ -16,27 +16,27 @@ mapping ={
 }
 
 
-filenames = ["results/llama-2-7b_qaevasion_clarity_test_set.pickle",
-             "results/llama-2-13b_qaevasion_clarity_test_set.pickle",
-             "results/llama_2_70b_clarity_zero_shot_test_set.pickle",
-             "results/falcon_40b_clarity_zero_shot_test_set.pickle",
-             "results/gpt3.5_evasion_zero_shot_test_set.pickle",
-             "results/gpt3.5_clarity_zero_shot_cot_test_set.pickle",
+filenames = ["../results/llama-2-7b_qaevasion_clarity_test_set.pickle",
+             "../results/llama-2-13b_qaevasion_clarity_test_set.pickle",
+             "../results/llama_2_70b_clarity_zero_shot_test_set.pickle",
+             "../results/falcon_40b_clarity_zero_shot_test_set.pickle",
+             "../results/gpt3.5_evasion_zero_shot_test_set.pickle",
+             "../results/gpt3.5_clarity_zero_shot_cot_test_set.pickle",
 
              
-             "results/llama-2-7b_qaevasion_evasion_test_set.pickle",
-             "results/llama-2-13b_qaevasion_evasion_test_set.pickle",
-             "results/llama_2_70b_evasion_zero_shot_test_set.pickle",
-             "results/llama-2-70b_qaevasion_evasion_test_set.pickle",
-             "results/falcon_7b_qaevasion_evasion_test_set.pickle",
-             "results/falcon_40b_evasion_zero_shot_test_set.pickle",
-             "results/falcon_40b_qaevasion_evasion_test_set.pickle",
-             "results/gpt3.5_evasion_zero_shot_test_set.pickle", 
-              "results/gpt3.5_evasion_zero_shot_cot_test_set.pickle",
+             "../results/llama-2-7b_qaevasion_evasion_test_set.pickle",
+             "../results/llama-2-13b_qaevasion_evasion_test_set.pickle",
+             "../results/llama_2_70b_evasion_zero_shot_test_set.pickle",
+             "../results/llama-2-70b_qaevasion_evasion_test_set.pickle",
+             "../results/falcon_7b_qaevasion_evasion_test_set.pickle",
+             "../results/falcon_40b_evasion_zero_shot_test_set.pickle",
+             "../results/falcon_40b_qaevasion_evasion_test_set.pickle",
+             "../results/gpt3.5_evasion_zero_shot_test_set.pickle", 
+              "../results/gpt3.5_evasion_zero_shot_cot_test_set.pickle",
              
              ]
              
-test_set = pd.read_csv("dataset/Inter-Annotator/test_set.csv")
+test_set = pd.read_csv("../dataset/Inter-Annotator/test_set.csv")
 
 true_labels = []
 

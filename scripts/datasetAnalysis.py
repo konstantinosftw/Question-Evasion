@@ -39,7 +39,7 @@ taxonomy ={
 
 
 
-dataset = pd.read_csv("dataset/QAEvasion.csv")
+dataset = pd.read_csv("../dataset/QAEvasion.csv")
 
 anns = {}
 for i in range (len(dataset)):

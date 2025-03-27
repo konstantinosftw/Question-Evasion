@@ -112,7 +112,7 @@ elif "deberta" in model_name:
     max_length = 512
 
 
-dataset = pd.read_csv("dataset/Inter-Annotator/test_set.csv")
+dataset = pd.read_csv("../dataset/Inter-Annotator/test_set.csv")
 labels = []
 
 for _, row in dataset.iterrows():
@@ -154,4 +154,5 @@ with torch.no_grad():
             results.append([is_trunc, true_label, pred_label])
             
 df = pd.DataFrame(results, columns=['is_truncated', 'true_labels', 'pred_labels'])
-df.to_csv(f"results/encoders/{model_name.split('/')[-1]}-{experiment}.csv")
+df.to_csv(f"../results/encoders/{model_name.split('/')[-1]}-{experiment}.csv")
+

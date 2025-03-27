@@ -46,7 +46,7 @@ mapping ={
 
 def load_qevasion_dataset(tokenizer, train_size = 900, annotator_ids = None, add_specific_labels = False):
     
-    dataset = pd.read_csv("dataset/QAEvasion.csv")
+    dataset = pd.read_csv("../dataset/QAEvasion.csv")
 
     texts = []
     for _, row in dataset.iterrows():

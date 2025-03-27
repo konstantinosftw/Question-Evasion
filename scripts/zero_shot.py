@@ -20,7 +20,7 @@ mapping = {
 def load_qevasion_dataset(add_specific_labels):
     
     
-    dataset = pd.read_csv("dataset/Inter-Annotator/test_set.csv")
+    dataset = pd.read_csv("../dataset/Inter-Annotator/test_set.csv")
     texts = []
     for _, row in dataset.iterrows():
         

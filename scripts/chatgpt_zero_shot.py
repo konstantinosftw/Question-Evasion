@@ -8,7 +8,7 @@ import argparse
 import pandas as pd
 def load_qevasion_dataset(add_specific_labels):
         
-    dataset = pd.read_csv("dataset/test_set.csv")
+    dataset = pd.read_csv("../dataset/test_set.csv")
     texts = []
     for _, row in dataset.iterrows():
         
@@ -25,14 +25,14 @@ def load_qevasion_dataset(add_specific_labels):
 2.7 Claims ignorance - The answerer claims/admits not to know the answer themselves.
 2.8 Clarification - Does not provide the requested information and asks for clarification.
 
-You are required to respond with a single term corresponding to the taxonomy code as well as the chain of thought explanation.\nLet's think step by step\n ### Part of the interview ###\n""" + row["Interview Question"] + "\n" + row["Interview Answer"] + "\n\n" + "### Question ###\n\n"
+You are required to respond with a single term corresponding to the taxonomy code and only.\n\n ### Part of the interview ###\n""" + row["Interview Question"] + "\n" + row["Interview Answer"] + "\n\n" + "### Question ###\n\n"
         else:
             text = """Based on a segment of the interview in which the interviewer poses a series of questions, classify the type of response provided by the interviewee for the following question using the following taxonomy and then provide a chain of thought explanation for your decision:
 1. Direct Reply - The information requested is explicitly stated (in the requested form)
 2. Direct Non-Reply - The information requested is not given at all due to ignorance, need for clarification or declining to answer
 3. Indirect Reply - The information requested is given in an incomplete way e.g. the answer is too general, partial, implicit, contradictory, diffused, dodging or deflection
 
-You are required to respond with a single term corresponding to the taxonomy code as well as the chain of thought explanation.\nLet's think step by step\n ### Part of the interview ###\n""" + row["Interview Question"] + "\n" + row["Interview Answer"] + "\n\n" + "### Question ###\n\n"
+You are required to respond with a single term corresponding to the taxonomy code and only.\n\n ### Part of the interview ###\n""" + row["Interview Question"] + "\n" + row["Interview Answer"] + "\n\n" + "### Question ###\n\n"
             
         
         if add_specific_labels:
